@@ -1,0 +1,14 @@
+{
+  "name": "Performance Task",
+  "lastModified": "INSERT modified date",
+  "sortBy": "lastModified",
+  "todos": [
+    {
+      "name": "Draft proposal paper",
+      "dueDate": "INSERT due date",
+      "isChecked": false,
+      "lastModified": "INSERT modified date",
+      "priorityLevel": 2 
+    }
+  ]
+}

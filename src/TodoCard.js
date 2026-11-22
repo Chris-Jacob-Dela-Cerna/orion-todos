@@ -12,4 +12,5 @@ export default class TodoCard {
   setName(newName) {
     this.name = newName;
   }
+
 }
