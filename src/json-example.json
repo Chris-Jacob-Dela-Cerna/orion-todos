@@ -9,6 +9,34 @@
       "isChecked": false,
       "lastModified": "INSERT modified date",
       "priorityLevel": 2 
+    },
+    {
+      "name": "Run with the bulls",
+      "dueDate": "INSERT due date",
+      "isChecked": true,
+      "lastModified": "INSERT modified date",
+      "priorityLevel": 2
+    },
+    {
+      "name": "What is is what is not",
+      "dueDate": "INSERT due date",
+      "isChecked": false,
+      "lastModified": "INSERT modified date",
+      "priorityLevel": 1
+    },
+    {
+      "name": "To see is to believe",
+      "dueDate": "INSERT due date",
+      "isChecked": false,
+      "lastModified": "INSERT modified date",
+      "priorityLevel": 3
+    },
+    {
+      "name": "Hello world",
+      "dueDate": "INSERT due date",
+      "isChecked": false,
+      "lastModified": "INSERT modified date",
+      "priorityLevel": 2
     }
   ]
 }
