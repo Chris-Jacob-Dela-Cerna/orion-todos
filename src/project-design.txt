@@ -1,0 +1,91 @@
+Project Todo List
+
+
+The page header:
+- "Orion Notes" logo.
+
+
+For the page itself:
+- should be empty at first, center tells the user it's empty and show a button to create a new card.
+- at the bottom-right, have a fixed button to add a new card.
+
+
+For the entire flow-grid:
+- a button at the top to sort by a-z / z-a / lastModified / dueDate.
+- a button for refreshing the cards to check for any changes.
+- flow in a row initially then wrap the next card to the column with the smallest height.
+- finished cards are last.
+
+
+For each todo list card:
+- contains a heading title.
+- double clicking the title turns it into an input box where you can rename.
+- a button to sort by a-z / z-a / lastModified / dueDate / priority.
+- checked todos are at the bottom, and text is dashed.
+- has a checklist todo list.
+- a wide button at the bottom to add more todos.
+- hovering the card shows the delete button at the top right.
+- if it has unchecked boxes, ask to confirm deletion.
+
+
+For each todo:
+- has a checkbox at the left.
+- name beside the checkbox.
+- double clicking the name turns it into an input box where you can rename.
+- has a priority indicator at the right.
+- clicking the indicator shows options to change priority.
+- hovering shows the full name (if clipped), due date below the name, and a delete button showing beside the priority icon.
+- clicking the date allows to change due date.
+- highlight todo if something is close due.
+- highlight even more if something is past due.
+
+
+
++ todo card -- class
+  store 
+  - title
+  - lastModified
+  - sortBy
+  - all todo items
+
++ todo item -- class
+  store 
+  - name
+  - dueDate
+  - isChecked
+  - lastModified
+  - priorityLevel
+
+
+
+For the json:
+- extract from localStorage as JSON string, then parse into object literal.
+- for existing cards/todos, insert methods onto each one.
+- when adding a new card/todo, you run them through the classes that already include those methods.
+
+- inside it, the sortBy property is there to determine how the cards/todos are ordered when adding a new card/todo.
+- when removing or editing a card, you use their index to target them in the json object.
+- a sorter logic is used to sort these cards/todos, whenever you add/edit a card the sorter is run.
+
+
+
+
+Sorting Logic:
++ Middleman
+  - a switch case is used to check the sorting condition and which to execute.
+  - each case triggers a function to keep things readable.
++ SRP Function
+  - each sorting logic gets its own function.
+  - this can be reused for sorting both cards and todos making it reusable.
+  - it returns 1 if true, -1 if false, if same condition, return 0 or else sort by ascending function.
+  
+  
+  
+  
+LINEAR FLOW
+- extract json from localStorage
+- parse json object into object literal
+- run through all todos inside each card, calling them inside the TodoItem class
+- run through all cards, calling them inside the TodoCard class
+- 
+
