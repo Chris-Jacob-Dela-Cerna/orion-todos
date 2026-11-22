@@ -18,52 +18,35 @@ import "./styles.css";
 
 //    SORTING
 
-function sortNameAscending(a, b) {
-  return a.name.localeCompare(b.name);
+function sortByName(ascending = true) {
+  return function(a, b) {
+    if (ascending) 
+      return a.name.localeCompare(b.name);
+    else
+      return b.name.localeCompare(a.name);
+  };
 }
 
-function sortNameDescending(a, b) {
-  return b.name.localeCompare(a.name);
-}
-
-function sortDueDateAscending(a, b) {
-  if (!isEqual(a.dueDate, b.dueDate)) {
-    if (isBefore(a.dueDate, b.dueDate)) {
-      return -1;
+function sortByDate(key, ascending = true) {
+  return function(a, b) {
+    if (!isEqual(a[key], b[key])) {
+      if (ascending)
+        isBefore(a[key], b[key]) ? -1 : 1;
+      else
+        isAfter(a[key], b[key])  ? -1 : 1;
     }
-    else if (isAfter(a.dueDate, b.dueDate)) {
-      return 1;
-    }
-  }
-  return sortNameAscending();
+    return sortByName(ascending);
+  };
 }
 
-function sortDueDateDescending(a, b) {
-  if (!isEqual(b.dueDate, a.dueDate)) {
-    if (isBefore(b.dueDate, a.dueDate)) {
-      return -1;
+function sortByPriority(ascending = true) {
+  return function(a, b) {
+    if (a.priorityLevel !== b.priorityLevel) {
+      if (ascending)
+        return a.priorityLevel - b.priorityLevel;
+      else
+        return b.priorityLevel - a.priorityLevel;
     }
-    else if (isAfter(b.dueDate, a.dueDate)) {
-      return 1;
-    }
-  }
-  return sortNameDescending();
-}
-
-// function sortLastModifiedAscending(a, b) {}
-
-// function sortLastModifiedDescending(a, b) {}
-
-function sortPriorityAscending(a, b) {
-  if (a.priorityLevel !== b.priorityLevel) {
-    return a.priorityLevel - b.priorityLevel
-  }
-  return sortNameAscending();
-}
-
-function sortPriorityDescending(a, b) {
-  if (b.priorityLevel !== a.priorityLevel) {
-    return b.priorityLevel - a.priorityLevel;
-  }
-  return sortNameDescending();
+    return sortByName(ascending);
+  };
 }
