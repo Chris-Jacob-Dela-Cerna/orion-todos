@@ -1,7 +1,7 @@
 {
   "name": "Performance Task",
   "lastModified": "INSERT modified date",
-  "sortBy": "lastModified",
+  "sortBy": "priorityLevelAscending",
   "todos": [
     {
       "name": "Draft proposal paper",

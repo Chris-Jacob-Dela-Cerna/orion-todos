@@ -16,11 +16,34 @@ import "./styles.css";
 //                 CORE
 //    ===============================
 
+const lookupTable = {
+  nameAscending: sortByName(),
+  nameDescending: sortByName(false),
+  dueDateAscending: sortByDate("dueDate"),
+  dueDateDescending: sortByDate("dueDate", false),
+  lastModifiedAscending: sortByDate("lastModified"),
+  lastModifiedDescending: sortByDate("lastModified", false),
+  priorityLevelAscending: sortByPriority(),
+  priorityLevelDescending: sortByPriority(false)
+};
+
+function sortTodosBy(todos, compareFn = "nameAscending") {
+  return [...todos].sort(lookupTable[compareFn]);
+}
+
+function temp(card) {
+  console.log(card.todos);
+  card.todos = sortTodosBy(card.todos, card.sortBy);
+  console.log(card.todos);
+}
+
 
 
 //    ===============================
 //               HELPERS
 //    ===============================
+
+//    ARRAY.SORT COMPARE FUNCTIONS
 
 function sortByName(ascending = true) {
   return function(a, b) {
@@ -54,3 +77,5 @@ function sortByPriority(ascending = true) {
     return sortByName(ascending)(a, b);
   };
 }
+
+temp(card);
