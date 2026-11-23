@@ -31,9 +31,9 @@ function sortByDate(key, ascending = true) {
   return function(a, b) {
     if (!isEqual(a[key], b[key])) {
       if (ascending)
-        isBefore(a[key], b[key]) ? -1 : 1;
+        return isBefore(a[key], b[key]) ? -1 : 1;
       else
-        isAfter(a[key], b[key])  ? -1 : 1;
+        return isAfter(a[key], b[key])  ? -1 : 1;
     }
     return sortByName(ascending);
   };
