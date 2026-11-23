@@ -85,7 +85,7 @@ Sorting Logic:
 LINEAR FLOW
 - extract json from localStorage
 - parse json object into object literal
-- run through all todos inside each card, calling them inside the TodoItem class
-- run through all cards, calling them inside the TodoCard class
+- run through all todos inside each card, running them through the TodoItem class
+- run through all cards, running them through the TodoCard class
 - 
 

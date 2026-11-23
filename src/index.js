@@ -13,10 +13,14 @@ import "./styles.css";
 
 
 //    ===============================
-//               HELPERS
+//                 CORE
 //    ===============================
 
-//    SORTING
+
+
+//    ===============================
+//               HELPERS
+//    ===============================
 
 function sortByName(ascending = true) {
   return function(a, b) {
@@ -35,7 +39,7 @@ function sortByDate(key, ascending = true) {
       else
         return isAfter(a[key], b[key])  ? -1 : 1;
     }
-    return sortByName(ascending);
+    return sortByName(ascending)(a, b);
   };
 }
 
@@ -47,6 +51,6 @@ function sortByPriority(ascending = true) {
       else
         return b.priorityLevel - a.priorityLevel;
     }
-    return sortByName(ascending);
+    return sortByName(ascending)(a, b);
   };
 }
