@@ -4,9 +4,10 @@
 
 import { isBefore, isAfter, isEqual } from "date-fns";
 
+import TodoDeck from "./TodoDeck.js";
 import TodoCard from "./TodoCard.js";
 import TodoItem from "./TodoItem.js";
-import card from "./json-example.json" with { type: ".json" }
+import exampleDeck from "./json-example.json" with { type: ".json" }
 
 import "./styles.css";
 
@@ -16,66 +17,8 @@ import "./styles.css";
 //                 CORE
 //    ===============================
 
-const lookupTable = {
-  nameAscending: sortByName(),
-  nameDescending: sortByName(false),
-  dueDateAscending: sortByDate("dueDate"),
-  dueDateDescending: sortByDate("dueDate", false),
-  lastModifiedAscending: sortByDate("lastModified"),
-  lastModifiedDescending: sortByDate("lastModified", false),
-  priorityLevelAscending: sortByPriority(),
-  priorityLevelDescending: sortByPriority(false)
-};
-
-function sortTodosBy(todos, compareFn = "nameAscending") {
-  return [...todos].sort(lookupTable[compareFn]);
-}
-
-function temp(card) {
-  console.log(card.todos);
-  card.todos = sortTodosBy(card.todos, card.sortBy);
-  console.log(card.todos);
-}
-
-
-
-//    ===============================
-//               HELPERS
-//    ===============================
-
-//    ARRAY.SORT COMPARE FUNCTIONS
-
-function sortByName(ascending = true) {
-  return function(a, b) {
-    if (ascending) 
-      return a.name.localeCompare(b.name);
-    else
-      return b.name.localeCompare(a.name);
-  };
-}
-
-function sortByDate(key, ascending = true) {
-  return function(a, b) {
-    if (!isEqual(a[key], b[key])) {
-      if (ascending)
-        return isBefore(a[key], b[key]) ? -1 : 1;
-      else
-        return isAfter(a[key], b[key])  ? -1 : 1;
-    }
-    return sortByName(ascending)(a, b);
-  };
-}
-
-function sortByPriority(ascending = true) {
-  return function(a, b) {
-    if (a.priorityLevel !== b.priorityLevel) {
-      if (ascending)
-        return a.priorityLevel - b.priorityLevel;
-      else
-        return b.priorityLevel - a.priorityLevel;
-    }
-    return sortByName(ascending)(a, b);
-  };
-}
-
-temp(card);
+console.log("\n\n\n\n\n\n\n\n\n\n");
+const deck = new TodoDeck(exampleDeck);
+console.log(deck);
+deck.sort();
+console.log(deck);
