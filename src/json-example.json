@@ -1,42 +1,411 @@
 {
-  "name": "Performance Task",
-  "lastModified": "INSERT modified date",
-  "sortBy": "priorityLevelAscending",
-  "todos": [
+  "sortBy": "lastModifiedAscending",
+  "cards": [
     {
-      "name": "Draft proposal paper",
-      "dueDate": "INSERT due date",
-      "isChecked": false,
+      "name": "Home Renovation",
       "lastModified": "INSERT modified date",
-      "priorityLevel": 2 
+      "sortBy": "priorityLevelAscending",
+      "todos": [
+        {
+          "name": "Get quotes from plumbers",
+          "dueDate": "INSERT due date",
+          "isChecked": false,
+          "lastModified": "INSERT modified date",
+          "priorityLevel": 1
+        },
+        {
+          "name": "Paint the living room walls",
+          "dueDate": "INSERT due date",
+          "isChecked": false,
+          "lastModified": "INSERT modified date",
+          "priorityLevel": 2
+        },
+        {
+          "name": "Order new curtains",
+          "dueDate": "INSERT due date",
+          "isChecked": true,
+          "lastModified": "INSERT modified date",
+          "priorityLevel": 3
+        },
+        {
+          "name": "Fix the leaky faucet in the kitchen",
+          "dueDate": "INSERT due date",
+          "isChecked": false,
+          "lastModified": "INSERT modified date",
+          "priorityLevel": 1
+        },
+        {
+          "name": "Choose light fixtures for the hallway",
+          "dueDate": "INSERT due date",
+          "isChecked": false,
+          "lastModified": "INSERT modified date",
+          "priorityLevel": 2
+        }
+      ]
     },
     {
-      "name": "Run with the bulls",
-      "dueDate": "INSERT due date",
-      "isChecked": true,
+      "name": "Weekly Groceries",
       "lastModified": "INSERT modified date",
-      "priorityLevel": 2
+      "sortBy": "priorityLevelAscending",
+      "todos": [
+        {
+          "name": "Buy eggs and milk",
+          "dueDate": "INSERT due date",
+          "isChecked": true,
+          "lastModified": "INSERT modified date",
+          "priorityLevel": 3
+        },
+        {
+          "name": "Stock up on fruits and vegetables",
+          "dueDate": "INSERT due date",
+          "isChecked": false,
+          "lastModified": "INSERT modified date",
+          "priorityLevel": 2
+        },
+        {
+          "name": "Purchase protein for meal prep",
+          "dueDate": "INSERT due date",
+          "isChecked": false,
+          "lastModified": "INSERT modified date",
+          "priorityLevel": 1
+        }
+      ]
     },
     {
-      "name": "What is is what is not",
-      "dueDate": "INSERT due date",
-      "isChecked": false,
+      "name": "Software Migration",
       "lastModified": "INSERT modified date",
-      "priorityLevel": 1
+      "sortBy": "priorityLevelAscending",
+      "todos": [
+        {
+          "name": "Audit current API integrations",
+          "dueDate": "INSERT due date",
+          "isChecked": false,
+          "lastModified": "INSERT modified date",
+          "priorityLevel": 1
+        },
+        {
+          "name": "Update authentication flow",
+          "dueDate": "INSERT due date",
+          "isChecked": false,
+          "lastModified": "INSERT modified date",
+          "priorityLevel": 1
+        },
+        {
+          "name": "Refactor database schema",
+          "dueDate": "INSERT due date",
+          "isChecked": false,
+          "lastModified": "INSERT modified date",
+          "priorityLevel": 2
+        },
+        {
+          "name": "Run integration tests",
+          "dueDate": "INSERT due date",
+          "isChecked": false,
+          "lastModified": "INSERT modified date",
+          "priorityLevel": 2
+        },
+        {
+          "name": "Update API documentation",
+          "dueDate": "INSERT due date",
+          "isChecked": false,
+          "lastModified": "INSERT modified date",
+          "priorityLevel": 3
+        },
+        {
+          "name": "Schedule team training session",
+          "dueDate": "INSERT due date",
+          "isChecked": false,
+          "lastModified": "INSERT modified date",
+          "priorityLevel": 3
+        },
+        {
+          "name": "Plan rollout strategy",
+          "dueDate": "INSERT due date",
+          "isChecked": true,
+          "lastModified": "INSERT modified date",
+          "priorityLevel": 1
+        }
+      ]
     },
     {
-      "name": "To see is to believe",
-      "dueDate": "INSERT due date",
-      "isChecked": false,
+      "name": "Birthday Party Planning",
       "lastModified": "INSERT modified date",
-      "priorityLevel": 3
+      "sortBy": "priorityLevelAscending",
+      "todos": [
+        {
+          "name": "Book the venue",
+          "dueDate": "INSERT due date",
+          "isChecked": true,
+          "lastModified": "INSERT modified date",
+          "priorityLevel": 1
+        },
+        {
+          "name": "Create guest list",
+          "dueDate": "INSERT due date",
+          "isChecked": true,
+          "lastModified": "INSERT modified date",
+          "priorityLevel": 1
+        },
+        {
+          "name": "Send digital invitations",
+          "dueDate": "INSERT due date",
+          "isChecked": false,
+          "lastModified": "INSERT modified date",
+          "priorityLevel": 2
+        },
+        {
+          "name": "Order the custom cake",
+          "dueDate": "INSERT due date",
+          "isChecked": false,
+          "lastModified": "INSERT modified date",
+          "priorityLevel": 2
+        },
+        {
+          "name": "Pick up decorations",
+          "dueDate": "INSERT due date",
+          "isChecked": false,
+          "lastModified": "INSERT modified date",
+          "priorityLevel": 3
+        },
+        {
+          "name": "Set up playlist",
+          "dueDate": "INSERT due date",
+          "isChecked": false,
+          "lastModified": "INSERT modified date",
+          "priorityLevel": 3
+        }
+      ]
     },
     {
-      "name": "Hello world",
-      "dueDate": "INSERT due date",
-      "isChecked": false,
+      "name": "Fitness Goals",
       "lastModified": "INSERT modified date",
-      "priorityLevel": 2
+      "sortBy": "priorityLevelAscending",
+      "todos": [
+        {
+          "name": "Complete 5 morning yoga sessions",
+          "dueDate": "INSERT due date",
+          "isChecked": false,
+          "lastModified": "INSERT modified date",
+          "priorityLevel": 2
+        },
+        {
+          "name": "Track daily calorie intake",
+          "dueDate": "INSERT due date",
+          "isChecked": false,
+          "lastModified": "INSERT modified date",
+          "priorityLevel": 1
+        },
+        {
+          "name": "Buy new running shoes",
+          "dueDate": "INSERT due date",
+          "isChecked": false,
+          "lastModified": "INSERT modified date",
+          "priorityLevel": 3
+        }
+      ]
+    },
+    {
+      "name": "Tax Preparation",
+      "lastModified": "INSERT modified date",
+      "sortBy": "priorityLevelAscending",
+      "todos": [
+        {
+          "name": "Collect W-2 and 1099 forms",
+          "dueDate": "INSERT due date",
+          "isChecked": true,
+          "lastModified": "INSERT modified date",
+          "priorityLevel": 1
+        },
+        {
+          "name": "Review deductible expenses",
+          "dueDate": "INSERT due date",
+          "isChecked": false,
+          "lastModified": "INSERT modified date",
+          "priorityLevel": 1
+        },
+        {
+          "name": "Gather medical receipts",
+          "dueDate": "INSERT due date",
+          "isChecked": false,
+          "lastModified": "INSERT modified date",
+          "priorityLevel": 2
+        },
+        {
+          "name": "Calculate charitable donations",
+          "dueDate": "INSERT due date",
+          "isChecked": false,
+          "lastModified": "INSERT modified date",
+          "priorityLevel": 2
+        },
+        {
+          "name": "Schedule meeting with accountant",
+          "dueDate": "INSERT due date",
+          "isChecked": false,
+          "lastModified": "INSERT modified date",
+          "priorityLevel": 1
+        },
+        {
+          "name": "File estimated tax payments",
+          "dueDate": "INSERT due date",
+          "isChecked": false,
+          "lastModified": "INSERT modified date",
+          "priorityLevel": 1
+        }
+      ]
+    },
+    {
+      "name": "Book Club Selection",
+      "lastModified": "INSERT modified date",
+      "sortBy": "priorityLevelAscending",
+      "todos": [
+        {
+          "name": "Read the final chapter of the current book",
+          "dueDate": "INSERT due date",
+          "isChecked": false,
+          "lastModified": "INSERT modified date",
+          "priorityLevel": 2
+        },
+        {
+          "name": "Vote on next month's title",
+          "dueDate": "INSERT due date",
+          "isChecked": false,
+          "lastModified": "INSERT modified date",
+          "priorityLevel": 3
+        }
+      ]
+    },
+    {
+      "name": "Travel Itinerary",
+      "lastModified": "INSERT modified date",
+      "sortBy": "priorityLevelAscending",
+      "todos": [
+        {
+          "name": "Book flights to Tokyo",
+          "dueDate": "INSERT due date",
+          "isChecked": true,
+          "lastModified": "INSERT modified date",
+          "priorityLevel": 1
+        },
+        {
+          "name": "Reserve hotel near Shibuya",
+          "dueDate": "INSERT due date",
+          "isChecked": true,
+          "lastModified": "INSERT modified date",
+          "priorityLevel": 1
+        },
+        {
+          "name": "Apply for passport renewal",
+          "dueDate": "INSERT due date",
+          "isChecked": false,
+          "lastModified": "INSERT modified date",
+          "priorityLevel": 1
+        },
+        {
+          "name": "Buy JR Pass online",
+          "dueDate": "INSERT due date",
+          "isChecked": false,
+          "lastModified": "INSERT modified date",
+          "priorityLevel": 2
+        },
+        {
+          "name": "Research local restaurants",
+          "dueDate": "INSERT due date",
+          "isChecked": false,
+          "lastModified": "INSERT modified date",
+          "priorityLevel": 3
+        },
+        {
+          "name": "Download offline maps",
+          "dueDate": "INSERT due date",
+          "isChecked": false,
+          "lastModified": "INSERT modified date",
+          "priorityLevel": 2
+        },
+        {
+          "name": "Pack suitcase",
+          "dueDate": "INSERT due date",
+          "isChecked": false,
+          "lastModified": "INSERT modified date",
+          "priorityLevel": 3
+        },
+        {
+          "name": "Set up international data plan",
+          "dueDate": "INSERT due date",
+          "isChecked": false,
+          "lastModified": "INSERT modified date",
+          "priorityLevel": 2
+        }
+      ]
+    },
+    {
+      "name": "Car Maintenance",
+      "lastModified": "INSERT modified date",
+      "sortBy": "priorityLevelAscending",
+      "todos": [
+        {
+          "name": "Schedule oil change appointment",
+          "dueDate": "INSERT due date",
+          "isChecked": false,
+          "lastModified": "INSERT modified date",
+          "priorityLevel": 1
+        },
+        {
+          "name": "Check tire pressure and tread depth",
+          "dueDate": "INSERT due date",
+          "isChecked": false,
+          "lastModified": "INSERT modified date",
+          "priorityLevel": 2
+        },
+        {
+          "name": "Replace windshield wipers",
+          "dueDate": "INSERT due date",
+          "isChecked": false,
+          "lastModified": "INSERT modified date",
+          "priorityLevel": 3
+        }
+      ]
+    },
+    {
+      "name": "Content Creation",
+      "lastModified": "INSERT modified date",
+      "sortBy": "priorityLevelAscending",
+      "todos": [
+        {
+          "name": "Record video intro for YouTube",
+          "dueDate": "INSERT due date",
+          "isChecked": false,
+          "lastModified": "INSERT modified date",
+          "priorityLevel": 1
+        },
+        {
+          "name": "Edit podcast episode 42",
+          "dueDate": "INSERT due date",
+          "isChecked": false,
+          "lastModified": "INSERT modified date",
+          "priorityLevel": 1
+        },
+        {
+          "name": "Write blog post outline",
+          "dueDate": "INSERT due date",
+          "isChecked": false,
+          "lastModified": "INSERT modified date",
+          "priorityLevel": 2
+        },
+        {
+          "name": "Design social media banners",
+          "dueDate": "INSERT due date",
+          "isChecked": false,
+          "lastModified": "INSERT modified date",
+          "priorityLevel": 2
+        },
+        {
+          "name": "Schedule posts for next week",
+          "dueDate": "INSERT due date",
+          "isChecked": false,
+          "lastModified": "INSERT modified date",
+          "priorityLevel": 3
+        }
+      ]
     }
   ]
 }
