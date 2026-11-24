@@ -12,7 +12,7 @@ For the page itself:
 
 For the entire flow-grid:
 - a button at the top to sort by a-z / z-a / lastModified / dueDate.
-- a button for refreshing the cards to check for any changes.
+- a button for refreshing the page to check for any changes.
 - flow in a row initially then wrap the next card to the column with the smallest height.
 - finished cards are last.
 
@@ -21,8 +21,8 @@ For each todo list card:
 - contains a heading title.
 - double clicking the title turns it into an input box where you can rename.
 - a button to sort by a-z / z-a / lastModified / dueDate / priority.
-- checked todos are at the bottom, and text is dashed.
 - has a checklist todo list.
+- checked todos are at the bottom, and text is dashed.
 - a wide button at the bottom to add more todos.
 - hovering the card shows the delete button at the top right.
 - if it has unchecked boxes, ask to confirm deletion.
@@ -39,22 +39,6 @@ For each todo:
 - highlight todo if something is close due.
 - highlight even more if something is past due.
 
-
-
-+ todo card -- class
-  store 
-  - title
-  - lastModified
-  - sortBy
-  - all todo items
-
-+ todo item -- class
-  store 
-  - name
-  - dueDate
-  - isChecked
-  - lastModified
-  - priorityLevel
 
 
 
@@ -82,10 +66,12 @@ Sorting Logic:
   
   
   
-LINEAR FLOW
-- extract json from localStorage
-- parse json object into object literal
+PAGE-LOAD FLOW
+- check if localStorage contains the page object.
+- if none:
+    add initial json string with blank cards array into localStorage.
+- extract json string from localStorage.
+- parse json string into object literal.
 - run through all todos inside each card, running them through the TodoItem class
 - run through all cards, running them through the TodoCard class
 - 
-
