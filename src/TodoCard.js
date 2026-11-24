@@ -1,3 +1,4 @@
+import sortingTable from "./sortingTable.js";
 
 export default class TodoCard {
 
@@ -41,6 +42,10 @@ export default class TodoCard {
   }
   set todos(todos) {
     this.#todos = todos;
+  }
+
+  sort() {
+    this.todos.sort(sortingTable[this.sortBy]);
   }
 
 }
