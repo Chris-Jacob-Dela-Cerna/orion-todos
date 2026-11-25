@@ -3,7 +3,7 @@ import { isBefore, isAfter, isEqual } from "date-fns";
 
 
 function sortByName(ascending = true) {
-  return function(a, b) {
+  return (a, b) => {
     if (ascending) 
       return a.name.localeCompare(b.name);
     else
@@ -12,7 +12,7 @@ function sortByName(ascending = true) {
 }
 
 function sortByDate(key, ascending = true) {
-  return function(a, b) {
+  return (a, b) => {
     if (!isEqual(a[key], b[key])) {
       if (ascending)
         return isBefore(a[key], b[key]) ? -1 : 1;
@@ -24,7 +24,7 @@ function sortByDate(key, ascending = true) {
 }
 
 function sortByPriority(ascending = true) {
-  return function(a, b) {
+  return (a, b) => {
     if (a.priorityLevel !== b.priorityLevel) {
       if (ascending)
         return a.priorityLevel - b.priorityLevel;
