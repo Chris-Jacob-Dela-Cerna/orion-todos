@@ -1,3 +1,4 @@
+import TodoItem from "./TodoItem.js";
 import sortingTable from "./sortingTable.js";
 
 export default class TodoCard {
@@ -12,7 +13,7 @@ export default class TodoCard {
     this.name = name;
     this.lastModified = lastModified;
     this.sortBy = sortBy;
-    this.todos = todos;
+    this.todos = TodoCard.parseTodos(todos);
   }
 
 
@@ -46,6 +47,11 @@ export default class TodoCard {
 
   sort() {
     this.todos.sort(sortingTable[this.sortBy]);
+  }
+
+
+  static parseTodos(todos) {
+    return todos.map(todo => new TodoItem(todo));
   }
 
 }

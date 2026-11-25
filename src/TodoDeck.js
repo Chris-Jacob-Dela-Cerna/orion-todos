@@ -1,3 +1,4 @@
+import TodoCard from "./TodoCard.js";
 import sortingTable from "./sortingTable.js";
 
 export default class TodoDeck {
@@ -8,7 +9,7 @@ export default class TodoDeck {
 
   constructor({sortBy, cards}) {
     this.sortBy = sortBy;
-    this.cards = cards;
+    this.cards = TodoDeck.parseCards(cards);
   }
 
 
@@ -29,6 +30,11 @@ export default class TodoDeck {
 
   sort() {
     this.cards.sort(sortingTable[this.sortBy]);
+  }
+
+
+  static parseCards(cards) {
+    return cards.map(card => new TodoCard(card));
   }
 
 }
