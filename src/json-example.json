@@ -4,7 +4,7 @@
     {
       "name": "Home Renovation",
       "lastModified": "INSERT modified date",
-      "sortBy": "priorityLevelAscending",
+      "sortBy": "nameDescending",
       "todos": [
         {
           "name": "Get quotes from plumbers",
@@ -74,7 +74,7 @@
     {
       "name": "Software Migration",
       "lastModified": "INSERT modified date",
-      "sortBy": "priorityLevelAscending",
+      "sortBy": "priorityLevelDescending",
       "todos": [
         {
           "name": "Audit current API integrations",

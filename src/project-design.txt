@@ -62,16 +62,16 @@ Sorting Logic:
   - each sorting logic gets its own function.
   - this can be reused for sorting both cards and todos making it reusable.
   - it returns 1 if true, -1 if false, if same condition, return 0 or else sort by ascending function.
-  
-  
-  
-  
+
+
+
+
 PAGE-LOAD FLOW
 - check if localStorage contains the page object.
 - if none:
     add initial json string with blank cards array into localStorage.
 - extract json string from localStorage.
 - parse json string into object literal.
-- run through all todos inside each card, running them through the TodoItem class
-- run through all cards, running them through the TodoCard class
-- 
+- run through all todos inside each card, running them through the TodoItem class.
+- run through all cards, running them through the TodoCard class.
+- create DOM element per iteration and attach an event listener.

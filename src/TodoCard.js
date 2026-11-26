@@ -43,6 +43,7 @@ export default class TodoCard {
   }
   set todos(todos) {
     this.#todos = todos;
+    this.sort();
   }
 
   sort() {

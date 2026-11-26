@@ -14,6 +14,4 @@ import "./styles.css";
 //    ===============================
 
 const deck = new TodoDeck(exampleDeck);
-deck.sortBy = "nameAscending";
-deck.sort();
 console.log(deck);

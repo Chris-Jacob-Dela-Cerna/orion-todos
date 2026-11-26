@@ -25,6 +25,7 @@ export default class TodoDeck {
   }
   set cards(cards) {
     this.#cards = cards;
+    this.sort();
   }
 
 
