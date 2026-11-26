@@ -1,5 +1,5 @@
 
-export default class TodoItem {
+export default class Todo {
 
   #name;
   #dueDate;

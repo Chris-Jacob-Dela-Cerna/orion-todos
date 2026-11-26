@@ -9,7 +9,7 @@ export default class TodoDeck {
 
   constructor({sortBy, cards}) {
     this.sortBy = sortBy;
-    this.cards = TodoDeck.parseCards(cards);
+    this.cards = this.#parseCards(cards);
   }
 
 
@@ -33,7 +33,7 @@ export default class TodoDeck {
   }
 
 
-  static parseCards(cards) {
+  #parseCards(cards) {
     return cards.map(card => new TodoCard(card));
   }
 
