@@ -1,35 +1,27 @@
 
-import { isBefore, isAfter, isEqual } from "date-fns";
+import { isBefore, isEqual } from "date-fns";
 
 
 function sortByName(ascending = true) {
-  return (a, b) => {
-    if (ascending) 
-      return a.name.localeCompare(b.name);
-    else
-      return b.name.localeCompare(a.name);
-  };
+  const sign = ascending ? 1 : -1;
+  return (a, b) => a.name.localeCompare(b.name) * sign;
 }
 
 function sortByDate(key, ascending = true) {
+  const sign = ascending ? 1 : -1;
   return (a, b) => {
     if (!isEqual(a[key], b[key])) {
-      if (ascending)
-        return isBefore(a[key], b[key]) ? -1 : 1;
-      else
-        return isAfter(a[key], b[key])  ? -1 : 1;
+      return isBefore(a[key], b[key]) ? -sign : sign;
     }
     return sortByName(ascending)(a, b);
   };
 }
 
 function sortByPriority(ascending = true) {
+  const sign = ascending ? 1 : -1;
   return (a, b) => {
-    if (a.priorityLevel !== b.priorityLevel) {
-      if (ascending)
-        return a.priorityLevel - b.priorityLevel;
-      else
-        return b.priorityLevel - a.priorityLevel;
+    if (!isEqual(a.priorityLevel, b.priorityLevel)) {
+      return (a.priorityLevel - b.priorityLevel) * sign;
     }
     return sortByName(ascending)(a, b);
   };
