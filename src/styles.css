@@ -1,1 +1,22 @@
-body { background-color: #262627; }
+
+* {
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+body {
+  min-height: 100vh;
+}
+
+header {
+  height: 3.5rem;
+}
+
+header, main {
+  border: 1px solid black;
+}

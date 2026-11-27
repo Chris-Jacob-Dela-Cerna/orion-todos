@@ -1,4 +1,4 @@
-import Todo from "./TodoItem.js";
+import Todo from "./Todo.js";
 import sortingTable from "./sortingTable.js";
 
 export default class TodoCard {
